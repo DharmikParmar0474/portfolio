@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <div class="logo-icon">DP</div>
+                <span class="logo-text">Dharmik Parmar</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="active">
+                    <a href="#overview">
+                        <i class="fas fa-home"></i>
+                        <span>Overview</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#experience">
+                        <i class="fas fa-clock"></i>
+                        <span>Experience</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#education">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Education</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="theme-switch">
+                <span>Theme</span>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/DharmikParmar0474" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dharmik-parmar-05a1552ba" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+<!--                <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>-->
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <header class="content-header">
+            <div class="header-title">
+                <h2>Portfolio Dashboard</h2>
+            </div>
+            <div class="user-controls">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <img src="images/avatar.jpg" alt="User Avatar">
+                    </div>
+                    <span class="user-name">Dharmik Parmar</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-container">
+            <!-- Overview Section -->
+            <section id="overview" class="content-section active">
+                <div class="section-header">
+                    <h1>Overview</h1>
+                    <p class="section-description">Welcome to my portfolio dashboard</p>
+                </div>
+
+                <div class="overview-cards">
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="metric-content">
+                            <h3>7+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="metric-content">
+                            <h3>6+ Years</h3>
+                            <p>Work Experience</p>
+                        </div>
+                    </div>
+
+                    <!--                        <div class="metric-card">-->
+                    <!--                            <div class="metric-icon">-->
+                    <!--                                <i class="fas fa-coffee"></i>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="metric-content">-->
+                    <!--                                <h3>1,000+</h3>-->
+                    <!--                                <p>Cups of Coffee</p>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                        -->
+                    <!--                        <div class="metric-card">-->
+                    <!--                            <div class="metric-icon">-->
+                    <!--                                <i class="fas fa-users"></i>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="metric-content">-->
+                    <!--                                <h3>20+</h3>-->
+                    <!--                                <p>Happy Clients</p>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                </div>
+
+                <div class="overview-profile">
+                    <div class="profile-intro">
+                        <div class="profile-avatar">
+                            <img src="images/profile.jpg" alt="Profile Picture">
+                        </div>
+                        <div class="profile-info">
+                            <h2>Dharmik Parmar</h2>
+                            <p class="profile-title">Full Stack Developer | .Net | Angular | React | Ionic | Nest.Js | MAUI / Xamarin.Forms</p>
+                            <p class="profile-location"><i class="fas fa-map-marker-alt"></i> Una, Gujarat, India,
+                                362560</p>
+                            <div class="profile-actions">
+                                <a href="#contact" class="btn primary-btn">Contact Me</a>
+                                <a href="#" class="btn outline-btn">Download CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-summary">
+                        <h3>About Me</h3>
+                        <p>I'm a Full Stack Developer with 6+ years of experience specializing in .NET technologies and
+                            modern JavaScript frameworks. I have worked on scalable web applications, APIs, CMS
+                            platforms, ASP.NET (MVC, Web API), WebScrapping using Selenium driver, PiranhaCMS and mobile apps using Xamarin.</p>
+                        <p>In addition to backend development, I have 2+ years of experience with frontend technologies
+                            like Angular and React, enabling me to build seamless, user-friendly applications. I'm
+                            passionate about designing efficient architectures, optimizing performance, and delivering
+                            great user experiences.</p>
+                        <p>Beyond development, I have hands-on experience with DevOps practices, including implementing CI/CD pipelines using Azure DevOps and GitHub Actions. I am proficient in version control with GitHub and have worked with project management tools like Jira and ClickUp to streamline workflows and enhance team collaboration.</p>
+
+                    </div>
+                </div>
+
+                <div class="latest-projects">
+                    <div class="section-subheader">
+                        <h3>Latest Projects</h3>
+                        <a href="#projects" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="projects-preview">
+                        <div class="project-preview-card">
+                            <div class="project-preview-image">
+                                <img src="images/thinkpdf.jpeg" alt="ThinkPDF">
+                            </div>
+                            <div class="project-preview-content">
+                                <h4>Think Pdf</h4>
+                                <p>React, MongoDB, Python</p>
+                                <p><strong>Role</strong> : In this project, my primary role was as a frontend developer using the React framework. We utilized various tools and libraries, including Axios for API communication and Tailwind CSS for styling.</p>
+<!--                                <a href="#projects" class="project-link">View Details</a>-->
+                            </div>
+                        </div>
+
+                        <div class="project-preview-card">
+                            <div class="project-preview-image">
+                                <img src="images/ingredients.jpeg" alt="Nutri Lens">
+                            </div>
+                            <div class="project-preview-content">
+                                <h4>Nutri Lens</h4>
+                                <p>React, MongoDB, Python</p>
+                                <p><strong>Role</strong> : In this project, my primary role was as a frontend developer using the React framework. We utilized various tools and libraries, including Axios for API communication and Tailwind CSS for styling.</p>
+<!--                                <a href="#projects" class="project-link">View Details</a>-->
+                            </div>
+                        </div>
+                        <div class="project-preview-card">
+                            <div class="project-preview-image">
+                                <img style="object-fit: contain" src="images/nutri-lens-mobile.jpeg" alt="Nutri Lens Mobile">
+                            </div>
+                            <div class="project-preview-content">
+                                <h4>Nutri Lens Mobile</h4>
+                                <p>Ionic, React, Capacitor, MongoDB, Python</p>
+                                <p><strong>Role</strong> : In this project, my primary role was as a frontend developer using the Ionic React framework. We utilized various tools and libraries, including Axios for API communication and Capacitor for access mobile native features like camara.</p>
+<!--                                <a href="#projects" class="project-link">View Details</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="content-section">
+                <div class="section-header">
+                    <h1>Projects</h1>
+                    <p class="section-description">A showcase of my recent work</p>
+                </div>
+
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+<!--                    <button class="filter-btn" data-filter="ui">UI/UX Design</button>-->
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="images/thinkpdf.jpeg" alt="Think Pdf">
+                        </div>
+                        <div class="project-content">
+                            <h3>Think Pdf</h3>
+                            <h5>Freelance</h5>
+                            <p>Upload, analyze, and interact with your PDFs using advanced AI. Get instant summaries, smart highlights, and chat with your documents</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>MongoDB</span>
+                                <span>Python</span>
+                            </div>
+                            <p><strong>Role</strong> : In this project, my primary role was as a frontend developer using the React framework. We utilized various tools and libraries, including Axios for API communication and Tailwind CSS for styling.</p>
+<!--                            <div class="project-links">-->
+<!--                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>-->
+<!--                                <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="images/recruitmenter.jpeg" alt="AI Recruiter">
+                        </div>
+                        <div class="project-content">
+                            <h3>AI Recruiter (Ongoing)</h3>
+                            <h5>Freelance</h5>
+                            <p>A platform where admins post jobs, candidates apply, and AI-driven screening shortlists the best candidates for efficient hiring. </p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Ant Design</span>
+                                <span>MongoDB</span>
+                                <span>Python</span>
+                            </div>
+<!--                            <div class="project-links">-->
+<!--                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="images/ingredients.jpeg" alt="Nutri Lens">
+                        </div>
+                        <div class="project-content">
+                            <h3>Nutri Lens</h3>
+                            <h5>Freelance</h5>
+                            <p>An AI-driven tool that analyzes ingredients and health details from uploaded images, providing nutritional insights and allergen detection.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>MongoDB</span>
+                                <span>Python</span>
+                            </div>
+                            <p><strong>Role</strong> : In this project, my primary role was as a frontend developer using the React framework. We utilized various tools and libraries, including Axios for API communication and Tailwind CSS for styling.</p>
+<!--                            <div class="project-links">-->
+<!--                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <img style="object-fit: contain" src="images/nutri-lens-mobile.jpeg" alt="Nutri Lens">
+                        </div>
+                        <div class="project-content">
+                            <h3>Nutri Lens Mobile</h3>
+                            <h5>Freelance</h5>
+                            <p>A mobile app version of NutriLens web for An AI-driven tool that analyzes ingredients and health details from uploaded images, providing nutritional insights and allergen detection.</p>
+                            <div class="project-tech">
+                                <span>Ionic</span>
+                                <span>React</span>
+                                <span>MongoDB</span>
+                                <span>Python</span>
+                            </div>
+                            <p><strong>Role</strong> : In this project, my primary role was as a frontend developer using the Ionic React framework. We utilized various tools and libraries, including Axios for API communication and Capacitor for access mobile native features like camara.</p>
+<!--                            <div class="project-links">-->
+<!--                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img style="object-fit: contain" src="images/gotimmy.png" alt="GoTimmy">
+                        </div>
+                        <div class="project-content">
+                            <h3>GoTimmy</h3>
+                            <h5>GhLabs IT Solution</h5>
+                            <p>Sports Camp Registration And Management Software | Sports Academy Management System</p>
+                            <div class="project-tech">
+                                <span>.Net</span>
+                                <span>Angular with Material Design</span>
+                                <span>MSSQL</span>
+                                <span>Azure</span>
+                            </div>
+                            <p><strong>Role</strong> : Responsible for creating APIs, managing databases, and writing accurate, efficient, and high-performance code to ensure seamless application functionality.</p>
+<!--                            <div class="project-links">-->
+<!--                                <a href="https://gotimmy.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img style="object-fit: contain" src="images/mptl.png" alt="MPTL">
+                        </div>
+                        <div class="project-content">
+                            <h3>My Path To Learning</h3>
+                            <h5>GhLabs IT Solution</h5>
+                            <p>Chart a path towards literacy and mathematics success for every student! Inspired by, created by, and written by a teacher - for a teacher.</p>
+                            <div class="project-tech">
+                                <span>.Net</span>
+                                <span>Angular with Material Design</span>
+                                <span>MSSQL</span>
+                                <span>Azure</span>
+                            </div>
+                            <p><strong>Role</strong> : Responsible for creating APIs, managing databases, and writing accurate, efficient, and high-performance code while also working with frontend technologies like Angular to ensure seamless application functionality.</p>
+<!--                            <div class="project-links">-->
+<!--                                <a href="https://www.mypathtolearning.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img style="object-fit: contain" src="images/docnaire.png" alt="Docnaire">
+                        </div>
+                        <div class="project-content">
+                            <h3>Docnaire</h3>
+                            <h5>GhLabs IT Solution</h5>
+                            <p>PerfectLO is a cloud-based mortgage software that solves one of the biggest problems during the loan application process: failure to provide the detailed information to complete a Borrower’s true profile.</p>
+                            <div class="project-tech">
+                                <span>.Net</span>
+                                <span>Angular with Clarity Design</span>
+                                <span>MSSQL</span>
+                                <span>Azure</span>
+                            </div>
+                            <p><strong>Role</strong> : Responsible for creating APIs, managing databases, and writing accurate, efficient, and high-performance code while also working with frontend technologies like Angular to ensure seamless application functionality.</p>
+<!--                            <div class="project-links">-->
+<!--                                <a href="https://app.docnaire.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <img style="object-fit: contain" src="images/deliveryapp.png" alt="Food Delivery App">
+                        </div>
+                        <div class="project-content">
+                            <h3>Food Delivery App</h3>
+                            <h5>GhLabs IT Solution</h5>
+                            <p>Food delivery app for delivery riders</p>
+                            <div class="project-tech">
+                                <span>Xamarin.Forms</span>
+<!--                                <span>MongoDB</span>-->
+<!--                                <span>Python</span>-->
+                            </div>
+                            <p><strong>Role</strong> : Lead mobile app developer using Xamarin.Forms that consume apis and also track rider's live location using foreground service.</p>
+                            <!--                            <div class="project-links">-->
+                            <!--                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>-->
+                            <!--                                <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="content-section">
+                <div class="section-header">
+                    <h1>Skills</h1>
+                    <p class="section-description">My technical expertise and capabilities</p>
+                </div>
+
+                <div class="skills-overview">
+                    <div class="skills-breakdown">
+
+                        <div class="skill-category">
+                            <h4>Frontend Development</h4>
+                            <div class="skill-bars">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Asp.Net / .Net Core (MVC)</span>
+                                        <span class="skill-percentage">95%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">React</span>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Angular</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-breakdown">
+
+                        <div class="skill-category">
+                            <h4>Backend Development</h4>
+                            <div class="skill-bars">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">.Net</span>
+                                        <span class="skill-percentage">95%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Nest.js</span>
+                                        <span class="skill-percentage">80%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">SQL Databases (MSSQL, PostgresSQL)</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">No SQL Databases (MongoDB, Azure CosmosDb)</span>
+                                        <span class="skill-percentage">80%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="skills-breakdown">
+                        <div class="skill-category">
+                            <h4>Mobile Development</h4>
+                            <div class="skill-bars">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Xamarin.forms / Maui</span>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Ionic using (React / Angular)</span>
+                                        <span class="skill-percentage">70%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 70%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="skills-breakdown">
+                        <div class="skill-category">
+                            <h4>Tools & Technologies</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Asp.Net</span>
+                                <span class="skill-tag">.Net Core</span>
+                                <span class="skill-tag">Azure Functions</span>
+                                <span class="skill-tag">Windows Services</span>
+                                <span class="skill-tag">Background Services</span>
+                                <span class="skill-tag">Web Scrapping using Selenium</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Azure</span>
+                                <span class="skill-tag">DevOps</span>
+                                <span class="skill-tag">Entity Framework</span>
+                                <span class="skill-tag">Dapper</span>
+                                <span class="skill-tag">Xamarin.Forms / MAUI</span>
+                                <span class="skill-tag">CQRS Pattern</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">Firebase</span>
+                                <span class="skill-tag">Distributed Cache like Redis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="content-section">
+                <div class="section-header">
+                    <h1>Experience</h1>
+                    <p class="section-description">My professional journey</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">
+                            <span>2019 - Present</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Senior Full Stack Developer</h3>
+                            <h4>Ghlabs IT Solutions.</h4>
+                            <p>Lead Developer for web applications and .NET-based mobile apps. Implemented CI/CD pipelines using Azure DevOps and worked extensively on API performance optimization. Experienced in maintaining and enhancing legacy projects and developing eCommerce web applications with payment gateway integration.
+
+                                Gained hands-on experience in mobile app development using Xamarin.Forms and .NET MAUI, including features like live location tracking. Additionally, worked with frontend technologies such as Angular and .NET MVC for web applications.
+
+                                Also had the opportunity to work with Azure Functions, web scraping with Selenium, Windows Services, and continuous background services, contributing to scalable and automated solutions.</p>
+                            <div class="timeline-tech">
+                                <span>DevOps</span>
+                                <span>Asp.Net / .Net Core (Api, MVC)</span>
+                                <span>Xamarin.Forms / MAUI</span>
+                                <span>Web Scrapping using Selenium</span>
+                                <span>Angular</span>
+                                <span>MSSQL</span>
+                                <span>PostgresSQL</span>
+                                <span>CQRS</span>
+                                <span>DevOps</span>
+                                <span>Web Scrapping using Selenium</span>
+                                <span>Azure Functions</span>
+                                <span>Background Services</span>
+                                <span>Distributed Cache like Redis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">
+                            <span>2022 - Present</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Frontend Developer</h3>
+                            <h4>(Freelance)</h4>
+                            <p>Worked on various web applications built using frontend technologies like Angular and React. Also gained experience in mobile app development using React Native and Ionic with Angular/React.
+
+                                Additionally, worked on backend development with .NET and Nest.js, integrating databases such as MongoDB and Firebase for scalable and efficient solutions.</p>
+                            <div class="timeline-tech">
+                                <span>MongoDb</span>
+                                <span>Capacitor</span>
+                                <span>Nest.js</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="content-section">
+                <div class="section-header">
+                    <h1>Education</h1>
+                    <p class="section-description">My academic background and certifications</p>
+                </div>
+
+                <div class="education-container">
+                    <div class="education-cards">
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="education-content">
+                                <h3>Master of Computer Science & IT (MSc-IT)</h3>
+                                <h4>Bhakta Kavi Narsinh Mehta University</h4>
+                                <p class="education-date">2017 - 2018</p>
+                                <p>Specialized in Software Engineering with focus on distributed systems and cloud
+                                    computing.</p>
+                            </div>
+                        </div>
+
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="education-content">
+                                <h3>Bachelor of Computer Science & IT (BSc-IT)</h3>
+                                <h4>Saurastra University</h4>
+                                <p class="education-date">2014 - 2016</p>
+                                <p>Graduated with honors. Coursework in algorithms, data structures, and software
+                                    development.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="content-section">
+                <div class="section-header">
+                    <h1>Contact</h1>
+                    <p class="section-description">Let's work together</p>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>I'm always open to new opportunities, collaborations, or just a friendly chat. Feel free to
+                            reach out through any of the following channels:</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <p>New York, USA</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>LinkedIn</h4>
+                                    <p><a href="#" target="_blank">linkedin.com/in/johndoe</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn primary-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="main-footer">
+            <p>&copy; 2025 Dharmik Parman. All rights reserved.</p>
+        </footer>
+    </main>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/charts.js"></script>
+</body>
+</html> 
