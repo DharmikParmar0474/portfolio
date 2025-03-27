@@ -192,7 +192,7 @@ p {
     margin-left: 0.75rem;
     font-family: var(--font-heading);
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: var(--text-primary);
     transition: opacity var(--transition-normal), visibility var(--transition-normal);
 }
